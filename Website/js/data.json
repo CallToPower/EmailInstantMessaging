@@ -1,0 +1,101 @@
+var app = {
+	"version": "0.13.2",
+	"status": "beta",
+	"build": "1",
+	"changelog": "txt/changelog.txt",
+	"about": [
+        {
+			"img_login_height": "30%",
+			"img_login": "imgs/eim/screenshots/1.png",
+			"img_fetch_height": "20%",
+			"img_fetch": "imgs/eim/screenshots/4.png"
+		},
+	],
+	"features": [
+		"log in with any email account that supports imap",
+		"log in with different accounts at the same time",
+		"account wizard and imap server completion for some big email providers (gmail, aol, outlook/hotmail, neomailbox)",
+		"fetching of messages of the last 4 days, keeping messages of the last 12 days",
+		"real-time communication",
+		"security options (STARTTLS, SSL, SSL/TLS)",
+		"notification messages",
+		"clean and easy-to-use interface (menu bar menus, contact list, messages view)",
+		"accessible via the menu bar",
+		"option to display all messages or just messages sent from EIM",
+		"internationalization (english and german)"
+	],
+	faq: [
+        {
+			"type": "os",
+			"question": "Do I need any prerequisite software for using EIM?",
+			"answer": "If you want to use EIM under Windows or Mac OS X you don't need any other software, just install EIM and start using it. If you want to use EIM via the 'Cross' download, you need to install a <a href='http://www.oracle.com/technetwork/java/javase/downloads/index.html' target='_blank'>JRE</a> first."
+		},
+        {
+			"type": "os",
+			"question": "Is it possible to use EIM under my Linux (Ubuntu, CentOS, ...)/Linux-like/other operating system?",
+			"answer": "It should be possible for every operating system that supports a current Java platform to run EIM. Just download EIM via the 'Cross' option under 'Downloads'. Be aware that your operating system may not have been (fully) tested and that EIM may not be well integrated into it."
+		},
+        {
+			"type": "provider",
+			"question": "Which providers are the best ones to use, which work and which don't work?",
+			"answer": "Successfully tested providers:<ul><li>GoogleMail</li><li>AOL</li><li>Neomailbox</li></ul>Working, but not great*:<ul><li>Outlook/Hotmail</li></ul>Not working:<ul><li>Yahoo</li><li>Every provider that does not support IMAP</li></ul><small>*for different reasons, e.g. pushing mails just every 2 minutes</small>"
+		},
+        {
+			"type": "provider",
+			"question": "My email provider does not appear in the account wizard. What to do?",
+			"answer": "Select 'Custom account' in the account wizard. You will need your provider's server data (IMAP and SMTP) to continue (see <i>'Where do I find my provider's server data?'</i>)."
+		},
+        {
+			"type": "provider",
+			"question": "Where do I find my provider's server data?",
+			"answer": "If your provider is not being listed in the account wizard, you will need your provider's server data (IMAP and SMTP) to continue. For best results google search for '&lt;your provider name&gt; IMAP SMTP', e.g. 'University of California Berkeley IMAP SMTP'. Search results like 'Client settings for...' or 'How do I set up IMAP in ...' will appear most likely."
+		},
+        {
+			"type": "misc",
+			"question": "How do I install EIM?",
+			"answer": "<ul><li>Mac OS X</li><ul><li><a href='#download'>Download</a> the Mac OS X disk image (.dmg) file</li><li>Double click the disk image (.dmg) file</li><li>Drag'n'Drop EIM.app to your Applications folder</li></ul><li>Windows (Setup)</li><ul><li><a href='#download'>Download</a> the Windows Setup (.exe) file</li><li>Double click the Windows Setup (.exe) file</li><li>If the warning <a href='imgs/installation/windows_install_warning1.png' target='_blank'>'Windows protected your PC'</a> appears</li><ol><li>Click on 'More Info'</li><li>Click on <a href='imgs/installation/windows_install_warning2.png' target='_blank'>'Run anyway'</a></li></ol><li>Follow the installation instructions</li></ul></ul>"
+		},
+        {
+			"type": "misc",
+			"question": "EIM can't log in to my email account. What is wrong?",
+			"answer": "Make sure <ul><li>your email provider supports IMAP</li><li>your credentials (username + password) are correct</li><li>you are connected to the internet</li><li>your provider's servers are online</li><li>the server data are correct (to display them select the account from the menu, select 'Show data' in the appearing Login-dialog)</li></ul>"
+		},
+        {
+			"type": "misc",
+			"question": "Why can't I see any emails after the initial fetch when I click on one of the contacts?",
+			"answer": "The option <i>'Display only messages sent from EIM'</i> is activated by default. This means that only messages sent from EIM are being displayed in the messages view. Make sure this option is not enabled if you wish to see all of your email messages, including those which have not been sent via EIM. To enable or disable it, go to 'Preferences', select or deselect this option and click on 'Ok'."
+		}
+	],
+	"screenshots": [
+        {
+			"description": "Account wizard",
+			"url": "imgs/eim/screenshots/1.png"
+		},
+        {
+			"description": "Login screen",
+			"url": "imgs/eim/screenshots/2.png"
+		},
+		/*
+        {
+			"description": "Login screen with server data",
+			"url": "imgs/eim/screenshots/3.png"
+		},
+		*/
+        {
+			"description": "Notifications",
+			"url": "imgs/eim/screenshots/4.png"
+		},
+        {
+			"description": "Fast access via the menu bar",
+			"url": "imgs/eim/screenshots/5.png"
+		}
+	],
+	"downloadwarning": "Users upgrading to a version >= 0.11.1 beta (build 1) have to delete their database file (eim.db)!",
+	"download": {
+		"macos": "https://dl.dropboxusercontent.com/u/6833781/Apps/EIM/EIM_v0-13-2_beta_build-1_mac.dmg",
+		"windows_setup": "https://dl.dropboxusercontent.com/u/6833781/Apps/EIM/EIM_v0-13-2_beta_build-1_windows-Setup.exe",
+		"windows_zip": "https://dl.dropboxusercontent.com/u/6833781/Apps/EIM/EIM_v0-13-2_beta_build-1_windows.zip",
+		"cross": "https://dl.dropboxusercontent.com/u/6833781/Apps/EIM/EIM_v0-13-2_beta_build-1_cross.zip",
+		"android" : "https://dl.dropboxusercontent.com/u/6833781/Apps/EIM/EmailIM-debug.apk"
+	}
+}

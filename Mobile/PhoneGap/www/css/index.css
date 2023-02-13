@@ -1,0 +1,43 @@
+#page_contact_list img,#page_open_chats img {
+	width:70%;
+}
+
+.btn_account_delete {
+	width: 22px;
+	float: right;
+}
+
+.chat_message {
+	position: relative;
+	padding: 15px;
+	margin: 1em 0 3em;
+	color: #fff;
+	background: #075698;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.chat_message.own {
+	margin-right: 0px;
+	margin-left: 20px;
+	background: #075698;
+}
+
+.chat_message.partner {
+	margin-left: 0px;
+	margin-right: 20px;
+	background: #075698;
+}
+
+.chat_message .chat_info {
+	font-size: small;
+	color: DodgerBlue;
+	position:absolute;
+}
+.chat_message .chat_info.partner {
+	left:15px;
+}
+.chat_message .chat_info.own {
+	right:15px;
+}

@@ -1,0 +1,8 @@
+Email Instant Messaging - Changelog
+===================================
+
+0.13.2 beta
+-----------
+- Fix: Authentication error not shown
+- Fix: Address mapping problems in bubble messages
+- Fix: Performance improvements (logging improvements)

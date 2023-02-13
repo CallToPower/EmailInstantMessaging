@@ -1,0 +1,17 @@
+.DS_Store
+nbproject
+manifest.mf
+/Desktop/build/
+/Desktop/dist/
+/Desktop/store/
+*.db
+*.log
+*.classpath
+*.project
+*.prefs
+/Mobile/PhoneGap Mail Plugin/bin/
+/Mobile/PhoneGap/platforms/android/CordovaLib/bin/
+/Mobile/PhoneGap/platforms/android/CordovaLib/local.properties
+/Mobile/PhoneGap/platforms/android/bin/
+/Mobile/PhoneGap/platforms/android/local.properties
+/Mobile/PhoneGap/plugins/com.dgrodt.phonegapMail/bin/

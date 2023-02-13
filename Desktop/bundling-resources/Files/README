@@ -1,0 +1,43 @@
+EIM - Email Instant Messaging
+=============================
+
+Version
+=======
+0.13.2 beta build 1
+
+Author
+======
+Denis Meyer
+
+License
+=======
+See file "EULA"
+
+3rd-Party-Licenses
+==================
+See files under "Licenses"
+
+Oracle Java 7 JRE
+-----------------
+Oracle Binary Code License Agreement for the Java SE Platform
+http://www.oracle.com/technetwork/java/javase/terms/license/index.html
+
+Log4j 2
+-------
+Apache Software License, Version 2.0
+http://logging.apache.org/log4j/2.x/license.html
+
+SQLite JDBC
+-----------
+Apache License, Version 2.0
+http://www.apache.org/licenses/LICENSE-2.0
+
+JavaMail
+--------
+CDDL license and the GPLv2 with Classpath Exception license
+https://java.net/projects/javamail/pages/License
+
+Minicons Free Vector Icons Pack
+-------------------------------
+Creative Commons Attribution 3.0 Unported License
+http://www.webalys.com/minicons/icons-free-pack.php

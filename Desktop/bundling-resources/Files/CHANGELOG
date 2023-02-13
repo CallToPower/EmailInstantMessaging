@@ -1,0 +1,17 @@
+EIM - Changelog
+===============
+
+1.0.0
+=====
+(build 1)
+- log in with any email account that supports imap
+- log in with different accounts at the same time
+- account wizard and imap server completion for some big email providers (gmail, aol, outlook/hotmail, neomailbox)
+- fetching of messages of the last 4 days, keeping messages of the last 12 days
+- real-time communication
+- security options (STARTTLS, SSL, SSL/TLS)
+- notification messages
+- clean and easy-to-use interface (menu bar menus, contact list, messages view)
+- accessible via the menu bar
+- option to display all messages or just messages sent from EIM
+- internationalization (english and german)

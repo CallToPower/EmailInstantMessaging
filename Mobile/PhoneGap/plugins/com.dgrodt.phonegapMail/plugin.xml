@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" id="com.dgrodt.phonegapMail"
+	version="0.1.0">
+	<name>Mail</name>
+	<description>Sample PhoneGap Calendar Plugin</description>
+	<license>MIT</license>
+	<keywords>phonegap,calendar</keywords>
+
+
+	<js-module src="www/mail.js" name="Mail">
+		<clobbers target="window.mail" />
+	</js-module>
+
+	<!-- android -->
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="MailUtils">
+				<param name="android-package" value="com.dgrodt.phonegapMail.MailUtils" />
+			</feature>
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/*">
+			<uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+			<uses-permission android:name="android.permission.WAKE_LOCK" />
+			<uses-permission android:name="android.permission.USE_CREDENTIALS" />
+			<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/*/application/activity">
+			<intent-filter>
+    	     	<action android:name="com.dgrodt.phonegapMail.MAIN"/>
+     	     	<category android:name="android.intent.category.DEFAULT"/>
+   			 </intent-filter>
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/*/application">
+		<service android:name="com.dgrodt.phonegapMail.MailService"/>
+			<receiver android:name="com.dgrodt.phonegapMail.MailBroadcast">
+				<intent-filter>
+					<action android:name="com.dgrodt.phonegapMail.android.action.broadcast" />
+				</intent-filter>
+			</receiver>
+		</config-file>
+
+		<source-file src="src/com/dgrodt/phonegapMail/MailUtils.java"
+			target-dir="src/com/dgrodt/phonegapMail" />
+		<source-file src="src/com/dgrodt/phonegapMail/Mail.java"
+			target-dir="src/com/dgrodt/phonegapMail" />
+		<source-file src="src/com/dgrodt/phonegapMail/MailService.java"
+			target-dir="src/com/dgrodt/phonegapMail" />
+		<source-file src="src/com/dgrodt/phonegapMail/MailAccount.java"
+			target-dir="src/com/dgrodt/phonegapMail" />
+		<source-file src="src/com/dgrodt/phonegapMail/MailSQLiteHelper.java"
+			target-dir="src/com/dgrodt/phonegapMail" />
+		<source-file src="src/com/dgrodt/phonegapMail/MailContact.java"
+			target-dir="src/com/dgrodt/phonegapMail" />
+			<source-file src="src/com/dgrodt/phonegapMail/MailBroadcast.java"
+			target-dir="src/com/dgrodt/phonegapMail" />
+		<source-file src="lib/activation.jar" target-dir="libs" />
+		<source-file src="lib/additionnal.jar" target-dir="libs" />
+		<source-file src="lib/mail.jar" target-dir="libs" />
+		<source-file src="lib/jsoup-1.7.3.jar" target-dir="libs" />
+	</platform>
+</plugin>

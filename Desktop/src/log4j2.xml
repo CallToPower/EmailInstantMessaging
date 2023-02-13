@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSSS} [%-5level] [%t] %logger{40}::%M{40} - %msg%n" />
+        </Console>
+        <RollingFile name="EIMRollingFileAppender" fileName="EIM/eim.log" filePattern="EIM/logs/%d{dd-MM-yyyy}/eim-%i.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSSS} [%-5level] [%t] %logger{40}::%M{40} - %msg%n" />
+            <Policies>
+                <TimeBasedTriggeringPolicy />
+                <SizeBasedTriggeringPolicy size="5 MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="20" />
+        </RollingFile>
+    </Appenders>
+    <Loggers>
+        <Root level="DEBUG">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="EIMRollingFileAppender" />
+        </Root>
+    </Loggers>
+</Configuration>
